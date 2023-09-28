@@ -1,0 +1,60 @@
+[2023-09-12 06:18:50,164] INFO _log() L187   * Restarting with stat - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-12 06:19:14,661] ERROR log_exception() L1414 Exception on /login [GET] - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\flask\app.py L1414
+Traceback (most recent call last):
+  File "C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\flask_openapi3\scaffold.py", line 127, in view_func
+    response = func(**func_kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\app.py", line 113, in do_login
+    console.log(usuario_senha)
+    ^^^^^^^
+NameError: name 'console' is not defined
+[2023-09-12 06:19:14,678] INFO _log() L187  127.0.0.1 - - [12/Sep/2023 06:19:14] "[35m[1mGET /login?email=lauroguerra@uol.com.br&senha=orual HTTP/1.1[0m" 500 - - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-12 09:41:15,499] INFO _log() L187   * Detected change in 'C:\\Users\\lauro\\Documents\\lauro\\Sistemas\\controle_gastos_app\\login_services\\app.py', reloading - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-12 09:41:15,685] INFO _log() L187   * Restarting with stat - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-12 09:41:29,419] INFO _log() L187  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.15.6:5001 - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-12 09:41:29,420] INFO _log() L187  [33mPress CTRL+C to quit[0m - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-12 09:41:29,423] INFO _log() L187   * Restarting with stat - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-12 09:42:08,352] INFO _log() L187  127.0.0.1 - - [12/Sep/2023 09:42:08] "[31m[1mPOST /cadastrar_usuario HTTP/1.1[0m" 409 - - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-13 15:38:26,440] INFO _log() L187  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.15.6:5001 - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-13 15:38:26,443] INFO _log() L187  [33mPress CTRL+C to quit[0m - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-13 15:38:26,446] INFO _log() L187   * Restarting with stat - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-13 15:40:34,514] INFO _log() L187  127.0.0.1 - - [13/Sep/2023 15:40:34] "POST /cadastrar_usuario HTTP/1.1" 200 - - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-13 15:40:50,858] INFO _log() L187  127.0.0.1 - - [13/Sep/2023 15:40:50] "GET /login?email=lauroguerra@uol.com.br&senha=orual HTTP/1.1" 200 - - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-13 15:44:15,926] INFO _log() L187  127.0.0.1 - - [13/Sep/2023 15:44:15] "GET /login?email=lauroguerra@uol.com.br&senha=orual HTTP/1.1" 200 - - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-13 15:47:53,737] INFO _log() L187   * Detected change in 'C:\\Users\\lauro\\Documents\\lauro\\Sistemas\\controle_gastos_app\\login_services\\app.py', reloading - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-13 15:47:53,960] INFO _log() L187   * Restarting with stat - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-13 15:48:00,733] INFO _log() L187  127.0.0.1 - - [13/Sep/2023 15:48:00] "GET /login?email=lauroguerra@uol.com.br&senha=orual HTTP/1.1" 200 - - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-13 15:49:24,165] INFO _log() L187   * Detected change in 'C:\\Users\\lauro\\Documents\\lauro\\Sistemas\\controle_gastos_app\\login_services\\app.py', reloading - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-13 15:49:24,464] INFO _log() L187   * Restarting with stat - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-13 15:49:28,705] INFO _log() L187  127.0.0.1 - - [13/Sep/2023 15:49:28] "GET /login?email=lauroguerra@uol.com.br&senha=wewe HTTP/1.1" 200 - - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-13 15:50:07,839] INFO _log() L187  127.0.0.1 - - [13/Sep/2023 15:50:07] "GET /login?email=lauroguerra@uol.com.br&senha=wewe HTTP/1.1" 200 - - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-13 15:50:24,237] WARNING do_login() L101  Erro ao buscar usuario '', Usuario não encontrado na base :/ - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\app.py L101 
+[2023-09-13 15:50:24,241] INFO _log() L187  127.0.0.1 - - [13/Sep/2023 15:50:24] "[33mGET /login?email=&senha= HTTP/1.1[0m" 404 - - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-13 15:50:42,227] WARNING do_login() L101  Erro ao buscar usuario 'guerra88@gmail.com', Usuario não encontrado na base :/ - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\app.py L101 
+[2023-09-13 15:50:42,231] INFO _log() L187  127.0.0.1 - - [13/Sep/2023 15:50:42] "[33mGET /login?email=guerra88@gmail.com&senha=wewe HTTP/1.1[0m" 404 - - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-13 15:53:55,554] INFO _log() L187   * Detected change in 'C:\\Users\\lauro\\Documents\\lauro\\Sistemas\\controle_gastos_app\\login_services\\app.py', reloading - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-13 15:53:55,777] INFO _log() L187   * Restarting with stat - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-13 15:54:00,369] INFO _log() L187  127.0.0.1 - - [13/Sep/2023 15:54:00] "GET /login?email=lauroguerra@uol.com.br&senha=wewe HTTP/1.1" 200 - - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-13 15:54:19,592] INFO _log() L187  127.0.0.1 - - [13/Sep/2023 15:54:19] "GET /login?email=lauroguerra@uol.com.br&senha=wewe HTTP/1.1" 200 - - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\Lib\site-packages\werkzeug\_internal.py L187 
+[2023-09-13 15:54:47,274] WARNING do_login() L101  Erro ao buscar usuario '', Usuario não encontrado na base :/ - call_trace=C:\Users\lauro\Documents\lauro\Sistemas\controle_gastos_app\login_services\app.py L101 
